@@ -7,7 +7,7 @@
         
         //exampleAjax.
         case "exampleMethod": exampleMethod($_POST['data']);break;
-     
+      
     }
 
 
