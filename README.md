@@ -11,7 +11,7 @@ Just download js/mAjax.min.js file, and add js/mAjax.min.js on your HTML file:
 <script src="js/mAjax.min.js"></script>
 ```
 
-### Requirements
+## Requirements
 
 
 **Server**
@@ -66,7 +66,7 @@ mAjax.serverFile = 'MyServerFile.php'
 ```
 
 
-### Usage
+## Usage
 
 To send the requests to the server, you would only have to use the following methods:
 
