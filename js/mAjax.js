@@ -16,7 +16,7 @@ mAjax ={
 
 		  	xmlhttp=new XMLHttpRequest();
 
-		  }
+		  } 
 
 		else
 
