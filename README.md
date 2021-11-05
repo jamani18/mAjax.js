@@ -16,12 +16,12 @@ Just download js/mAjax.min.js file, and add js/mAjax.min.js on your HTML file:
 
 **Servidor**
 
-Para el correcto funciomamiento del script, hay que estructurar la aplicación para que todas las peticiones lleguen a un mismo fichero en el servidor. Ese fichero se encargará de rediriguir al método que el cliente solicita introduciendolo como parametro.
+For the correct functioning of the script, the application must be structured so that all requests reach the same file on the server. This file will be in charge of redirecting to the method that the client requests, introducing it as a parameter.
 
-El parámetro que escuchara el servidor para redirigir al método adecuado es **action**.
+The parameter that the server will listen to to redirect to the appropriate method is **action**.
 
 
-_Un ejemplo en PHP de ese fichero redireccionador:_
+_An example in PHP of that redirector file:_
 
 ```php
 <?php
@@ -57,9 +57,9 @@ _Un ejemplo en PHP de ese fichero redireccionador:_
 
 **Javascript**
 
-Una vez configurado el fichero del servidor correctamente. Solo habría que indicar a mAjax.js como se llama el fichero donde enviará la petición mediante una URL.
+Once the server file is configured correctly. You just have to indicate to mAjax.js the name of the file where it will send the request through a URL.
 
-_Si el fichero es llamado *Switch* podemos saltar este paso._
+_If the file is called *Switch* we can skip this step._
 
 ```js
 mAjax.serverFile = 'MyServerFile.php'
@@ -68,37 +68,37 @@ mAjax.serverFile = 'MyServerFile.php'
 
 ### Usage
 
-Para enviar las peticiones al servidor solo habría que utilizar los siguientes métodos:
+To send the requests to the server, you would only have to use the following methods:
 
 
-**Peticiones por GET**
+**GET Requests**
 
 ```js
 sendAjaxGet(async,serverMethod,sendData,callBack,ontimeoutcall,timeout);
 ```
 
-**Peticiones por POST**
+**POST Requests**
 
 ```js
 sendAjaxPost(async,serverMethod,sendData,callBack,ontimeoutcall,timeout);
 ```
 
 
-**Parámetros**
+**Parameters**
 
-La función de los parametros es la siguiente:
+The function of the parameters is as follows:
 
-**async:** . boolean. Realiza la conexión de forma sincrona o asincrona.
+**async:** . boolean. Make the connection synchronously or asynchronously.
 
-**serverMethod:** . String. Método que se llamará en el servidor.
+**serverMethod:** . String. Method to be called on the server.
 
-**sendData:** . Object. Parametros que se enviarán al servidor.
+**sendData:** . Object. Parameters to be sent to the server.
 
-**callBack:** . Function. Metodo que se ejecutará cuando llegue la respuesta del servidor.
+**callBack:** . Function. Method that will be executed when the response from the server arrives.
 
-**onTimeoutCall:** . Function. Método que se ejecutará si expira el tiempo de espera para la respuesta del servidor.
+**onTimeoutCall:** . Function. Method to be executed if the server response times out.
 
-**timeout:** . int.  Tiempo en milisegundos que esperará al servidor la respuesta. Por defecto es 10000
+**timeout:** . int.  Time in milliseconds that the server will wait for the response. Default is 10000
 
 
 
