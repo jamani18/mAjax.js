@@ -14,7 +14,7 @@ Just download js/mAjax.min.js file, and add js/mAjax.min.js on your HTML file:
 ### Requirements
 
 
-**Servidor**
+**Server**
 
 For the correct functioning of the script, the application must be structured so that all requests reach the same file on the server. This file will be in charge of redirecting to the method that the client requests, introducing it as a parameter.
 
@@ -102,7 +102,7 @@ The function of the parameters is as follows:
 
 
 
-## Ejemplo
+## Example
 
 ```js
 
