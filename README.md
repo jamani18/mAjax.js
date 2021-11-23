@@ -26,6 +26,8 @@ _An example in PHP of that redirector file:_
 ```php
 <?php
 
+    $data = json_decode($_POST['data'],true);
+    
     switch($_REQUEST['action']){
         
         //exampleAjax.
@@ -36,11 +38,10 @@ _An example in PHP of that redirector file:_
 
     //Recommended put this method on another file.
     //require realpath('ajax/exampleAjax.php');
-    function exampleMethod($dataJSON){
+    function exampleMethod($data){
 
         $response = 'false';
 
-        $data = json_decode($dataJSON,true);
         $issetParams = isset($data['name']);
 
         if($issetParams){
