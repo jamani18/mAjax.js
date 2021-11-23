@@ -1,23 +1,22 @@
 <?php
     
 
-
+    $data = json_decode($_POST['data'],true);
 
     switch($_REQUEST['action']){
         
         //exampleAjax.
-        case "exampleMethod": exampleMethod($_POST['data']);break;
-      
+        case "exampleMethod": exampleMethod($data);break;
+     
     }
 
 
     //Recommended put this method on another file.
     //require realpath('ajax/exampleAjax.php');
-    function exampleMethod($dataJSON){
+    function exampleMethod($data){
 
         $pass = 'false';
-
-        $data = json_decode($dataJSON,true);
+        
         $issetParams = isset($data['name']);
 
         if($issetParams){
